@@ -15,10 +15,10 @@
 </head>
 <body>
   <!-- site header  -->
-    <header class="header">
+    <header class="line">
       <div class="containers pt-[16px] pb-[16px] md:pt-[19px] md:pb-[25px] flex justify-between   items-center px-[0px] ">
           <div class="flex items-center gap-[8px] md:gap-[16px]">
-              <a href="#">
+              <a href="#" class="inline-block">
                   <img src="./images/Product-img.svg" alt="logo" width="40" height="36">
               </a>
               <strong class="font-semibold text-[30px] leading-[28px]">Product</strong>
@@ -35,37 +35,30 @@
                   <img src="./images/darckmode-img.svg" alt="logo" width="32" height="32">
               </button>
           </nav>
-      
-         <!-- Mobil menyu tugmasi + dark mode (faqat mobil) -->
         <div class="lg:hidden flex items-center gap-[8px] ">
-          <!-- Menyu tugmasi -->
           <img id="menuToggle" class="cursor-pointer z-50 relative" src="./images/header-mobile-img.svg" alt="logo" width="28" height="31"/>
-        <!-- Dark mode tugmasi -->
           <button class="dark-mode-toggle" onclick="toggleDarkMode()">
             <img src="./images/darckmode-img.svg" alt="logo" width="32" height="32">
           </button>   
         </div>
         <div id="mobileSidebar" class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 hidden lg:hidden ">
           <div class="w-64 bg-white h-full p-6 flex flex-col gap-4">
-            
             <button id="closeMenu" class="text-right text-gray-500 self-end text-xl font-bold">&times;</button>
-
-      
             <a class="text-[16px] leading-[28px] duration-300 hover:font-semibold custom-care" href="#product">Product</a>
             <a class="text-[16px] leading-[28px] duration-300 hover:font-semibold custom-care" href="#">Customers</a>
             <a class="text-[16px] leading-[28px] duration-300 hover:font-semibold custom-care" href="#price">Pricing</a>
             <a class="text-[16px] leading-[28px] duration-300 hover:font-semibold custom-care" href="#">Resources</a>
-
-          
             <button class="pt-[10px] pr-[23px] pb-[9px] pl-[25px] border-[1px] border-[#BCD0E5] rounded-[4px] text-[16px] font-semibold text-black duration-300 hover:bg-[#02897A] hover:text-white active:scale-90" type="submit">
               Sign In
             </button>
             <button class="pt-[10px] pr-[23px] pb-[9px] pl-[25px] border rounded-[4px] bg-[#02897A] border-transparent text-[16px] font-semibold text-white duration-300 hover:bg-white hover:text-black hover:border-[1px] hover:border-[#BCD0E5] active:scale-90" type="submit">
               Sign In
             </button>
+          </div>
+        </div>
       </div>
-  </header> 
-     <main>
+    </header> 
+    <main>
       <!-- Work at the speed of thought section  -->
          <section class="pt-[29px] pb-[99px] md:pt-[25px] md:pb-[114px]">
             <div class="containers flex flex-col-reverse xl:flex-row justify-between items-center">
@@ -257,20 +250,20 @@
                 <h2 class="font-bold text-[34px] text-center">Price Table</h2>
                 <p class="font-medium text-[16px] mt-[8px] mb-[74px] md:mb-[50px] text-center">We offer competitive price</p>
               </div>
-              <div class="flex flex-wrap gap-[32px] justify-center xl:gap-[0px] lg:flex-nowrap  xl:justify-between">
-                <div class="text-center w-[322px] border-[1px] rounded-[8px] table-shadow pt-[24px] pb-[32px] duration-300 transform md:hover:scale-110">
-                  <h3 class="font-bold text-[24px]">Free</h3>
-                  <p class="font-normal text-[16px] leading-[40px] mt-[8px] ">Brief price description</p>
+              <div class="flex flex-wrap gap-[32px] justify-center xl:gap-[0px] lg:flex-nowrap  xl:justify-between ">
+                <div class="text-center w-[322px] border-[1px] rounded-[8px] table-shadow pt-[24px] pb-[32px] duration-300 transform md:hover:scale-110 custom-care">
+                  <h3 class="font-bold text-[24px] custom-care">Free</h3>
+                  <p class="font-normal text-[16px] leading-[40px] mt-[8px] custom-care ">Brief price description</p>
                   <div class="flex items-center justify-center gap-[8px]">
-                    <p class="font-bold text-[76px] text-[#02897A] ">0</p>
+                    <p class="font-bold text-[76px] text-[#02897A] custom-cares">0</p>
                      <div>
-                       <p class="font-bold text-[24px] leading-[30px] text-[#02897A] text-start">$</p>
-                       <p class="font-normal text-[16px] leading-[19px] text-[#AFAFAF]">Per / month</p>
+                       <p class="font-bold text-[24px] leading-[30px] text-[#02897A] text-start custom-cares">$</p>
+                       <p class="font-normal text-[16px] leading-[19px] text-[#AFAFAF] custom-care">Per / month</p>
                      </div>
                   </div>
-                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] font">Only 2 Operators</p>
-                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] my-[16px] font">Notifications</p>
-                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] font">Landing Pages</p>
+                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] font custom-care">Only 2 Operators</p>
+                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] my-[16px] font custom-care">Notifications</p>
+                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] font custom-care">Landing Pages</p>
                   <button type="submit" class="font-semibold text-[18px] border border-transparent rounded-[8px] bg-[#02897A] py-[11px] px-[19px] text-white mt-[38px] transform duration-300 hover:text-[#02897A] hover:bg-white hover:border-[1px] hover:border-[#02897A] active:scale-90" >Order Now</button>
                 </div>
                 <div class="text-center w-[322px] border-[1px] rounded-[8px] table-shadow pt-[24px] pb-[32px] bg-[#02897A] duration-300 transform md:hover:scale-110">
@@ -288,19 +281,19 @@
                   <p class="font-medium text-[16px] leading-[22px] text-[#22343D] font text-white">Landing Pages</p>
                   <button type="submit" class="font-semibold text-[18px] border border-transparent rounded-[8px] bg-white py-[11px] px-[19px] text-[#02897A] mt-[38px] transform duration-300 hover:text-[#02897A] hover:bg-white hover:border-[1px] hover:border-[#02897A] active:scale-90 order" >Order Now</button>
                 </div>
-                <div class="text-center w-[322px] border-[1px] rounded-[8px] table-shadow pt-[24px] pb-[32px] duration-300 transform md:hover:scale-110">
-                  <h3 class="font-bold text-[24px]">Premium</h3>
-                  <p class="font-normal text-[16px] leading-[40px] mt-[8px] ">Brief price description</p>
+                <div class="text-center w-[322px] border-[1px] rounded-[8px] table-shadow pt-[24px] pb-[32px] duration-300 transform md:hover:scale-110 custom-care">
+                  <h3 class="font-bold text-[24px] custom-care">Premium</h3>
+                  <p class="font-normal text-[16px] leading-[40px] mt-[8px] custom-care">Brief price description</p>
                   <div class="flex items-center justify-center gap-[8px]">
-                    <p class="font-bold text-[76px] text-[#02897A] ">10</p>
+                    <p class="font-bold text-[76px] text-[#02897A] custom-cares">10</p>
                      <div>
-                       <p class="font-bold text-[24px] leading-[30px] text-[#02897A] text-start">$</p>
-                       <p class="font-normal text-[16px] leading-[19px] text-[#AFAFAF]">Per / month</p>
+                       <p class="font-bold text-[24px] leading-[30px] text-[#02897A] text-start custom-cares">$</p>
+                       <p class="font-normal text-[16px] leading-[19px] text-[#AFAFAF] custom-care">Per / month</p>
                      </div>
                   </div>
-                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] font">10+ Operators</p>
-                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] my-[16px] font">Notifications</p>
-                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] font">Landing Pages</p>
+                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] font custom-care">10+ Operators</p>
+                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] my-[16px] font custom-care">Notifications</p>
+                  <p class="font-medium text-[16px] leading-[22px] text-[#22343D] font custom-care">Landing Pages</p>
                   <button type="submit" class="font-semibold text-[18px] border border-transparent rounded-[8px] bg-[#02897A] py-[11px] px-[19px] text-white mt-[38px]  transform duration-300 hover:text-[#02897A] hover:bg-white hover:border-[1px] hover:border-[#02897A] active:scale-90" >Order Now</button>
                 </div>
               </div>
@@ -382,7 +375,7 @@
       <div class="containers flex flex-col md:flex-row  justify-between items-center md:items-start gap-[32px] text-center md:text-start">
         <div class="flex flex-col gap-[25px]    ">
           <div class="flex items-center gap-[8px] md:gap-[16px]">
-            <a href="#">
+            <a href="#" class="inline-block">
                 <img class="" src="./images/Product-img.svg" alt="logo" width="40" height="36">
             </a>
             <strong class="font-semibold text-[30px] md:text-[20px] lg:text-[30px] leading-[28px]">Product</strong>
@@ -464,9 +457,7 @@
           }
         });
       </script>
-      
-      
-      
+         
 </body>
 </html>
 
