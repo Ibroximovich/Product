@@ -39,7 +39,9 @@
   @media (max-width: 640px) {
     .line {
       background: white; 
-      box-shadow: 0px -2px 8px 0px #00000040;
+      /* box-shadow: 0px -2px 8px 0px #00000040; */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
       position: relative; 
       z-index: 50;
     }
@@ -97,10 +99,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* .header {
+.line{
   padding: 16px;
   text-align: center;
-} */
+}
 
 .header-container {
   display: flex;
