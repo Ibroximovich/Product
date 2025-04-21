@@ -31,9 +31,13 @@
               <button class="pt-[10px] pr-[23px] pb-[9px] pl-[25px] border-[1px] border-[#BCD0E5] rounded-[4px] text-[16px] bg-white font-semibold text-black duration-300 hover:bg-[#02897A] hover:text-white active:scale-90" type="submit">Sign In</button>
               <button class="pt-[10px] pr-[23px] pb-[9px] pl-[25px] border rounded-[4px] bg-[#02897A] border-transparent text-[16px] font-semibold text-white duration-300 hover:bg-white hover:text-black hover:border-[1px] hover:border-[#BCD0E5] active:scale-90" type="submit">Sign In</button>
               <!-- Dark Mode Toggle Button -->
-              <button class="dark-mode-toggle " onclick="toggleDarkMode()">
-                  <img src="./images/darckmode-img.svg" alt="logo" width="32" height="32">
-              </button>
+            <button id="darkToggleBtn" class="dark-mode-toggle">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="16" fill="white" />
+                <path d="M16 26C21.514 26 26 21.514 26 16C26 10.486 21.514 6 16 6C10.486 6 6 10.486 6 16C6 21.514 10.486 26 16 26Z" fill="#02897A" />
+                <path d="M23 16C23 12.134 19.865 9 16 9V23C19.865 23 23 19.866 23 16Z" fill="white" />
+              </svg>
+            </button>
           </nav>
         <div class="lg:hidden flex items-center gap-[8px] ">
           <img id="menuToggle" class="cursor-pointer z-50 relative" src="./images/header-mobile-img.svg" alt="logo" width="28" height="31"/>
@@ -116,7 +120,8 @@
           <div class="containers flex flex-col-reverse  gap-[50px] xl:gap-[0px] lg:flex-row lg:justify-between pl-[36px] pr-[40px] xl:pl-[0px] xl:pr-[0px]">
             <div class="max-w-[334px] md:min-w-[420px] md:mx-auto lg:mx-0">
               <strong class="font-semibold text-[16px] text-[#22343D] dark:text-white block md:text-center lg:text-start">Effortless Validation for</strong>
-              <h2 class="font-bold text-[32px] text-[#22343D] dark:text-white mt-[8px] mb-[16px] md:mb-[131px] md:text-center lg:text-start">Management</h2>
+              <h2 class="font-bold text-[32px] text-[#22343D] dark:text-white mt-[8px] lg:mb-[131px] md:text-center lg:text-start">Management</h2>
+              <p class="flex lg:hidden font-normal text-[16px] leading-[26px] text-[#22343D] dark:text-white my-[16px] md:text-center lg:text-start">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
               <strong class="font-semibold text-[16px] leading-[26px] text-[#22343D] dark:text-white block md:text-center lg:text-start">Accessory makers</strong>
               <p class="font-normal text-[16px] leading-[26px] mt-[12px] mb-[16px] md:mb-[25px] dark:text-white  md:text-center lg:text-start">While most people enjoy casino gambling, sports betting, lottery, and bingo playing for fun</p>
               <strong class="font-semibold text-[16px] leading-[26px] text-[#22343D] dark:text-white block md:text-center lg:text-start">Alterationists</strong>
@@ -455,6 +460,12 @@
           }
         });
       </script>
+       <script>
+        const toggleBtn = document.getElementById("darkToggleBtn");
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
          
 </body>
 </html>

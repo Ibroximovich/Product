@@ -114,13 +114,26 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
-
 .dark-mode-toggle {
-  padding: 10px;
-  background-color: transparent; 
-   border: none;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
 }
+
+.dark-mode-toggle svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
 
 /* Dark Mode Styles */
 body.dark-mode {
